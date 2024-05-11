@@ -70,6 +70,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
+TARGET_USES_UEFI := true
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -130,6 +131,7 @@ PLATFORM_VERSION := 20.1.0
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
